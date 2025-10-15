@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoRent S.A.C. - Alquiler de Vehículos en Lima</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header__contenedor">
+            <div class="header__barra">
+                <a href="index.html">
+                    <img class="header__logo" src="img/logo-autorent.svg" alt="Logo AutoRent S.A.C.">
+                </a>
+                <nav class="navegacion">
+                    <a class="navegacion__enlace" href="index.html">Inicio</a>
+                    <a class="navegacion__enlace" href="flota.html">Flota</a>
+                    <a class="navegacion__enlace" href="servicios.html">Servicios</a>
+                    <a class="navegacion__enlace" href="blog.html">Blog</a>
+                    <a class="navegacion__enlace" href="nosotros.html">Nosotros</a>
+                    <a class="navegacion__enlace" href="contacto.html">Contacto</a>
+                </nav>
+            </div><!-- .header__barra -->
+
+            <div class="modelo">
+                <h1 class="modelo__nombre">Alquila tu auto ideal</h1>
+                <p class="modelo__descripcion">Descubre nuestra flota de vehículos disponibles para alquiler diario, semanal o mensual. Calidad, seguridad y buen precio garantizados.</p>
+                <p class="modelo__precio">Desde $49/día</p>
+                <a class="modelo__enlace" href="flota.html">Ver Flota</a>
+            </div>
+        </div>
+        <img class="header__auto" src="img/header_auto.png" alt="Auto deportivo en cabecera">
+    </header>
+
+    <main class="productos productos__contenedor">
+        <h2 class="productos__heading">Nuestra Flota Disponible</h2>
+
+        <div class="productos__grid">
+            <!-- Vehículo 1 -->
+            <div class="producto">
+                <img class="producto__imagen" src="img/auto_01.jpg" alt="Toyota Corolla 2025">
+                <div class="producto__contenido">
+                    <h3 class="producto__nombre">Toyota Corolla</h3>
+                    <p class="producto__descripcion">Sedán moderno, económico y confiable. Ideal para ciudad y viajes familiares cortos.</p>
+                    <p class="producto__precio">$49/día</p>
+                    <a class="producto__enlace" href="vehiculo.html">Ver Detalles</a>
+                </div>
+            </div>
+
+            <!-- Vehículo 2 -->
+            <div class="producto">
+                <img class="producto__imagen" src="img/auto_02.jpg" alt="Hyundai Tucson 2025">
+                <div class="producto__contenido">
+                    <h3 class="producto__nombre">Hyundai Tucson</h3>
+                    <p class="producto__descripcion">SUV espacioso con sistema de seguridad avanzado. Perfecto para familias y viajes largos.</p>
+                    <p class="producto__precio">$65/día</p>
+                    <a class="producto__enlace" href="vehiculo.html">Ver Detalles</a>
+                </div>
+            </div>
+
+            <!-- Vehículo 3 -->
+            <div class="producto">
+                <img class="producto__imagen" src="img/auto_03.jpg" alt="Nissan Frontier 2025">
+                <div class="producto__contenido">
+                    <h3 class="producto__nombre">Nissan Frontier</h3>
+                    <p class="producto__descripcion">Camioneta 4x4 robusta, ideal para zonas rurales o aventuras off-road.</p>
+                    <p class="producto__precio">$75/día</p>
+                    <a class="producto__enlace" href="vehiculo.html">Ver Detalles</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="cursos">
+        <div class="cursos__contenedor cursos__grid">
+            <div class="cursos__contenido">
+                <h2 class="cursos__heading">Servicios Adicionales</h2>
+                <p class="cursos__texto">Ampliamos tu experiencia de alquiler con GPS, seguro ampliado y conductor profesional. Todo incluido en tu reserva.</p>
+                <a class="cursos__enlace" href="servicios.html">Más información</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="blog">
+        <h2 class="blog__heading">Nuestro Blog</h2>
+        <div class="blog__contenedor blog__grid">
+            <article class="entrada">
+                <img class="entrada__imagen" src="img/blog_alquiler.jpg" alt="Consejos para alquilar un auto">
+                <div class="entrada__contenido">
+                    <h3 class="entrada__titulo">Cómo elegir el mejor auto para tu viaje</h3>
+                    <p class="entrada__fecha">5 de mayo del 2025</p>
+                    <p class="entrada__texto">Aprende a seleccionar el vehículo adecuado según tu destino, número de pasajeros y tipo de ruta.</p>
+                    <a class="entrada__enlace" href="entrada.html">Leer Artículo</a>
+                </div>
+            </article>
+
+            <article class="entrada">
+                <img class="entrada__imagen" src="img/blog_consejos.jpg" alt="Viajando por carretera">
+                <div class="entrada__contenido">
+                    <h3 class="entrada__titulo">Consejos para viajar seguro por carretera</h3>
+                    <p class="entrada__fecha">3 de mayo del 2025</p>
+                    <p class="entrada__texto">Recomendaciones clave antes de salir: revisión del auto, documentación y plan de ruta.</p>
+                    <a class="entrada__enlace" href="entrada.html">Leer Artículo</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__contenedor footer__contenido">
+            <nav class="footer__nav">
+                <a class="footer__enlace" href="index.html">Inicio</a>
+                <a class="footer__enlace" href="flota.html">Flota</a>
+                <a class="footer__enlace" href="servicios.html">Servicios</a>
+                <a class="footer__enlace" href="blog.html">Blog</a>
+                <a class="footer__enlace" href="nosotros.html">Nosotros</a>
+                <a class="footer__enlace" href="contacto.html">Contacto</a>
+            </nav>
+            <p class="footer__copyright">Todos los derechos reservados. AutoRent S.A.C. &copy; 2025</p>
+        </div>
+    </footer>
+</body>
+</html>

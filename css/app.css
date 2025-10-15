@@ -1,0 +1,239 @@
+/* VARIABLES */
+:root {
+    --primary: #e99401;
+    --negro: #333;
+    --blanco: #fff;
+    --gris: #f5f5f5;
+    --fuente: 'Outfit', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fuente);
+    line-height: 1.6;
+    color: var(--negro);
+    background: var(--gris);
+}
+
+img {
+    max-width: 100%;
+}
+
+/* CONTENEDORES */
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.heading {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--primary);
+    margin: 2rem 0;
+}
+
+/* HEADER */
+.header {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../img/header_auto.png') center/cover no-repeat;
+    padding: 3rem 0;
+}
+
+.header__barra {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+.header__logo {
+    width: 200px;
+}
+
+.navegacion {
+    display: flex;
+    gap: 1rem;
+}
+
+.navegacion a {
+    color: var(--blanco);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.navegacion a:hover {
+    background: var(--primary);
+    color: var(--blanco);
+}
+
+/* HERO SECTION */
+.modelo {
+    color: var(--blanco);
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.modelo__nombre {
+    font-size: 3rem;
+}
+
+.modelo__precio {
+    font-size: 2.5rem;
+    color: var(--primary);
+}
+
+.modelo__enlace {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.8rem 2rem;
+    background: var(--primary);
+    color: var(--blanco);
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+/* GRID Y FLEX */
+.productos__grid,
+.blog__grid,
+.valores__grid,
+.nosotros__grid {
+    display: grid;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+@media (min-width: 768px) {
+    .productos__grid { grid-template-columns: repeat(2, 1fr); }
+    .blog__grid { grid-template-columns: repeat(2, 1fr); }
+    .valores__grid { grid-template-columns: repeat(3, 1fr); }
+    .nosotros__grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (min-width: 1024px) {
+    .productos__grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+/* PRODUCTOS Y SERVICIOS */
+.producto, .valor, .entrada {
+    background: var(--blanco);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.producto__imagen {
+    height: 200px;
+    object-fit: cover;
+}
+
+.producto__contenido,
+.entrada__contenido,
+.valor {
+    padding: 1rem;
+}
+
+.producto__nombre,
+.entrada__titulo {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.producto__precio,
+.entrada__fecha {
+    color: var(--primary);
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 0.5rem 0;
+}
+
+.producto__enlace,
+.entrada__enlace {
+    display: block;
+    text-align: center;
+    padding: 0.8rem;
+    background: var(--primary);
+    color: var(--blanco);
+    text-decoration: none;
+    font-weight: 700;
+    margin-top: 0.5rem;
+}
+
+/* FORMULARIO */
+.formulario {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: var(--blanco);
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.campo {
+    margin-bottom: 1rem;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.campo input,
+.campo textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid var(--primary);
+    border-radius: 5px;
+    font-family: var(--fuente);
+}
+
+.formulario__submit {
+    width: 100%;
+    padding: 0.8rem;
+    background: var(--primary);
+    color: var(--blanco);
+    border: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+/* FOOTER */
+.footer {
+    background: var(--negro);
+    color: var(--blanco);
+    padding: 2rem 0;
+    margin-top: 2rem;
+}
+
+.footer__contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+    text-align: center;
+}
+
+.footer a {
+    color: var(--blanco);
+    text-decoration: none;
+    padding: 0.5rem;
+}
+
+.footer a:hover {
+    color: var(--primary);
+}
